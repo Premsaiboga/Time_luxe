@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./Images//logo1.png" type="image/x-icon">
+    <style>
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .about h2,
+        .about p,
+        .about img {
+            animation: fadeInUp 1s ease forwards;
+            opacity: 0;
+        }
+
+        .about h2 {
+            animation-delay: 0.2s;
+        }
+
+        .about p:nth-of-type(1) {
+            animation-delay: 0.4s;
+        }
+
+        .about p:nth-of-type(2) {
+            animation-delay: 0.6s;
+        }
+
+        .about img {
+            animation-delay: 0.8s;
+        }
+
+        .back-home {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            z-index: 900;
+            transition: transform 0.3s ease;
+        }
+
+        .back-home:hover {
+            transform: scale(1.1);
+        }
+
+        .back-home img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #D4AF37;
+        }
+
+        @media (max-width: 768px) {
+            .back-home img {
+                width: 32px;
+                height: 32px;
+            }
+
+            .nav_wrapper {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav_wrapper">
+        <div class="nav_bar">
+            <nav>
+                <img src="./Images/logo1.png" alt="logo" class="logo" />
+                <h1>Time Luxe</h1>
+            </nav>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <h2>Royal Oak Offshore</h2>
+        <p><strong>The Icon That Redefined Luxury Sport.</strong></p>
+        <p>
+            The Audemars Piguet Royal Oak is an iconic luxury timepiece that revolutionized watch design with its
+            bold octagonal bezel, exposed screws, and integrated bracelet.
+        </p>
+        <img src="./Images/collection_1.jpg" alt="Jacob & Co"
+            style="max-width: 700px; width: 90%; margin-top: 20px; border-radius: 12px;" />
+
+        <a href="index.html#collections" class="back-home" title="Back to Home">
+            <img src="./Images/back_icon.png" alt="Back to Home" />
+        </a>
+    </section>
+
+    <footer>
+        <p style="color: #b89b30;">&copy; 2025 Time Luxe. All rights reserved.</p>
+        <p>Cell: +91 7393 340 332</p>
+        <p>Email: timeluxe@gmail.com</p>
+        <p>Instagram: Timeluxe</p>
+    </footer>
+</body>
+
+</html>
